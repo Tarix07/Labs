@@ -1,0 +1,88 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+
+.flex-container {
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+.one, .two, .three, .four, .five, .six, .seven{
+	border: 2px solid black;
+	margin-top: 1px;
+	margin-right: 1px;
+}
+
+.one{
+	background: #ccb3ff;
+}
+
+.two{
+	background: orange;
+	text-align: center;
+}
+.three{
+    background:yellow;
+	max-width: 200px;
+	min-width: 200px;
+	text-align: right;
+}
+
+.four{
+	background: #ff0066;
+	text-align: center;
+}
+
+.five {
+    background: #66ff33;
+}
+
+.six{
+	background: #366bd0;
+	min-width: 30%;
+}
+
+.seven{
+	background: #808080;
+	min-width: 30%;
+}
+
+.one, .five{
+	min-width: 350px;
+	max-width: 350px;
+
+}
+.row1, .row2, .row3{
+	display:flex;
+	flex-direction: row;	
+}
+	
+@media screen and (max-width: 1050px){
+	.row1,.row2{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column; 
+		min-width: 350px;
+	    align-items: center;
+	}
+}
+@media screen and (max-width: 1200px){
+	.row3{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column; 
+		min-width: 350px;
+		align-items: center;
+	}
+
+}
+
+
