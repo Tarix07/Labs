@@ -7,14 +7,17 @@ body{
 
 .flex-container {
 	display: flex;
-	width: 100%;
 	flex-wrap: wrap;
+	width: 100%;
 }
 
-.one, .two, .three, .four, .five, .six, .seven{
+.one,.two,.three,.four,.five,.six,.seven{
+	padding: 5px;
+        box-sizing: border-box;
 	border: 2px solid black;
 	margin-top: 1px;
 	margin-right: 1px;
+	width: 100%;	
 }
 
 .one{
@@ -26,7 +29,7 @@ body{
 	text-align: center;
 }
 .three{
-    background:yellow;
+        background:yellow;
 	max-width: 200px;
 	min-width: 200px;
 	text-align: right;
@@ -34,7 +37,7 @@ body{
 
 .four{
 	background: #ff0066;
-	text-align: center;
+	text-align: center;	
 }
 
 .five {
@@ -49,6 +52,7 @@ body{
 .seven{
 	background: #808080;
 	min-width: 30%;
+
 }
 
 .one, .five{
@@ -57,6 +61,7 @@ body{
 
 }
 .row1, .row2, .row3{
+	justify-content: space-around;
 	display:flex;
 	flex-direction: row;	
 }
@@ -84,5 +89,3 @@ body{
 	}
 
 }
-
-
