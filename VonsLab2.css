@@ -90,7 +90,7 @@ body{
 		align-items: center;
 	}
 }
-@media screen and (max-width: 375px){
+@media screen and (max-width: 450px){
 	.row1,.row2{
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
