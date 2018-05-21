@@ -3,7 +3,7 @@ deploy:
   provider: s3
   access_key_id: AKIAJ66JLNNGTNMRHX6A
   secret_access_key: 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
-    bucket: git-to-amazon-s3-outputbucket-1urzfqv2b7blf
+  bucket: git-to-amazon-s3-outputbucket-1urzfqv2b7blf
   on:
     repo: Tarix07/Labs
   acl: public_read
