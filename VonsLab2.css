@@ -95,8 +95,7 @@ body{
 		-ms-flex-direction: column;
 		-o-flex-direction: column;
 		flex-direction: column; 
-		min-width: 350px;
-	    align-items: center;
+	        align-items: center;
 	}
 	.one,.five{
 		width: 100%;
