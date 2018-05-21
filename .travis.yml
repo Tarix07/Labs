@@ -1,8 +1,8 @@
 language: generic
 deploy:
   provider: s3
-  access_key_id: AKIAIQDBPHNYY7WPLTAQ
-  secret_access_key: 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
+  access_key_id: AKIAJ66JLNNGTNMRHX6A
+  secret_access_key: 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
     bucket: git-to-amazon-s3-outputbucket-1urzfqv2b7blf
   on:
     repo: Tarix07/Labs
