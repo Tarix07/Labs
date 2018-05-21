@@ -90,7 +90,7 @@ body{
 		align-items: center;
 	}
 }
-@media screen and (max-width: 375px){	
+@media screen and (max-width: 380px){	
 	.one,.five{
 		max-width: 100%;	
 		min-width: 100%;	
