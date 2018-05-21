@@ -94,6 +94,7 @@ body{
 @media screen and (max-width: 415px){
 	.one,.five{
 		min-width: 100%;	
+		min-height: 300px; 
 	}
 
 }
