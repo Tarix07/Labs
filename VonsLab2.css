@@ -64,7 +64,6 @@ body{
 .one, .five{
 	min-width: 375px;
 	max-width: 375px;
-	font-size: 24px;
 
 }
 .row1, .row2, .row3{
