@@ -89,7 +89,17 @@ body{
 	}
 }
 @media screen and (max-width: 375px){
+	.row1,.row2{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column; 
+		min-width: 350px;
+	    align-items: center;
+	}
 	.one,.five{
 		width: 100%;
 	}
+
 }
