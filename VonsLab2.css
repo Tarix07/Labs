@@ -21,41 +21,39 @@ body{
 }
 
 .one{
-	background: #ccb3ff;
+	background-color: #ccb3ff;
 }
 
 .two{
-	background: orange;
+	background-color: orange;
 	text-align: center;
 
 }
 .three{
-    background:yellow;
+        background-color:yellow;
 	max-width: 200px;
 	min-width: 200px;
 	text-align: right;
 }
 
 .four{
-	background: #ff0066;
+	background-color: #ff0066;
 	text-align: center;
-
-	
 }
 
 .five {
-    background: #66ff33;
+    background-color: #66ff33;
 }
 
 .six{
-	background: #366bd0;
+	background-color: #366bd0;
 	min-width: 30%;
 
 
 }
 
 .seven{
-	background: #808080;
+	background-color: #808080;
 	min-width: 30%;
 
 
