@@ -17,7 +17,7 @@ body{
 	border: 2px solid black;
 	margin-top: 1px;
 	margin-right: 1px;
-	width: 100%;	
+	width: 100%;
 }
 
 .one{
@@ -27,17 +27,20 @@ body{
 .two{
 	background: orange;
 	text-align: center;
+
 }
 .three{
-        background:yellow;
-        width: 200px;
+    background:yellow;
+	max-width: 200px;
 	min-width: 200px;
 	text-align: right;
 }
 
 .four{
 	background: #ff0066;
-	text-align: center;	
+	text-align: center;
+
+	
 }
 
 .five {
@@ -47,17 +50,20 @@ body{
 .six{
 	background: #366bd0;
 	min-width: 30%;
+
+
 }
 
 .seven{
 	background: #808080;
 	min-width: 30%;
 
+
 }
 
 .one, .five{
-	min-width: 375px;
-	width: 375px;
+	width: 400px;
+	max-width: 400px;
 
 }
 .row1, .row2, .row3{
@@ -88,9 +94,11 @@ body{
 		align-items: center;
 	}
 }
-@media screen and (max-width: 380px){	
+@media screen and (max-width: 415px){
 	.one,.five{
-		width: 100%;		
+		width: 100%;	
 	}
 
 }
+
+
