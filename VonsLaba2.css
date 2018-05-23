@@ -2,6 +2,7 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: "Times New Roman", Times, serif;
+
 }
 
 
@@ -22,6 +23,7 @@ body{
 
 .one{
 	background: #ffe6cc;
+
 }
 
 .two{
@@ -34,6 +36,7 @@ body{
 	max-width: 225px;
 	min-width: 225px;
 	text-align: right;
+
 }
 
 .four{
@@ -46,6 +49,7 @@ body{
 
 .five {
     background:#809fff;
+
 }
 
 .six{
@@ -63,8 +67,8 @@ body{
 }
 
 .one, .five{
-	min-width: 375px;
-	max-width: 375px;
+	min-width: 415px;
+	max-width: 415px;
 	margin-left: 1px;
 
 }
@@ -73,8 +77,8 @@ body{
 	flex-direction: row;	
 }
 	
-@media screen and (max-width: 1050px){
-	.row1,.row2{
+@media screen and (max-width: 1200px){
+	.row1,.row2,.row3{
 		-webkit-flex-direction: column;
 		-moz-flex-direction: column;
 		-ms-flex-direction: column;
@@ -84,27 +88,11 @@ body{
 	    align-items: center;
 	    justify-content: center;
 	}
-}
-@media screen and (max-width: 1200px){
-	.row3{
-		-webkit-flex-direction: column;
-		-moz-flex-direction: column;
-		-ms-flex-direction: column;
-		-o-flex-direction: column;
-		flex-direction: column; 
-		min-width: 350px;
-		align-items: center;
-		justify-content: center;
-	}
-}
-
-	@media screen and (max-width: 390px){
-	
-	.one,.five{
-		/*width: 100%;*/
-		min-width: 100%;
+	.one,.five,.three{
+	 min-width: 100%;
 			}
 
 }
+
 
 
