@@ -1,0 +1,110 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Times New Roman", Times, serif;
+}
+
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.one,.two,.three,.four,.five,.six,.seven{
+	padding: 5px;
+    box-sizing: border-box;
+	border: 2px solid black;
+	margin-top: 1px;
+	margin-right: 1px;
+	width: 100%;
+}
+
+.one{
+	background: #ffe6cc;
+}
+
+.two{
+	background: orange;
+	text-align: center;
+
+}
+.three{
+    background:yellow;
+	max-width: 225px;
+	min-width: 225px;
+	text-align: right;
+}
+
+.four{
+	background: #009900;
+	text-align: center;
+	margin-left: 1px;
+
+	
+}
+
+.five {
+    background:#809fff;
+}
+
+.six{
+	background: #366bd0;
+	min-width: 30%;
+
+
+}
+
+.seven{
+	background-color: #808080;
+	min-width: 30%;
+
+
+}
+
+.one, .five{
+	min-width: 415px;
+	max-width: 415px;
+	margin-left: 1px;
+
+}
+.row1, .row2, .row3{
+	display:flex;
+	flex-direction: row;	
+}
+	
+@media screen and (max-width: 1050px){
+	.row1,.row2{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column; 
+		min-width: 350px;
+	    align-items: center;
+	    justify-content: center;
+	}
+}
+@media screen and (max-width: 1200px){
+	.row3{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column; 
+		min-width: 350px;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+	@media screen and (max-width: 430px){
+	
+	.one,.five{
+		/*width: 100%;*/
+		min-width: 100%;
+			}
+
+}
+
+
