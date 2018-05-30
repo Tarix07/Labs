@@ -129,7 +129,7 @@ var winload = function () {//елементи для перетягування
 
                 } else {
                    
-                    drop_zone.style.backgroundImage = 'url(images/hand/HandYel.png)';
+                    drop_zone.style.backgroundImage = 'url(images/hand/HandYel.PNG)';
 
                     info.innerHTML ='<h2>Камінь Розуму</h2>\
                             <p>Камінь дозволяє збільшувати силу свідомості власника і отримувати доступ до думок і снам інших істот.<br>\
