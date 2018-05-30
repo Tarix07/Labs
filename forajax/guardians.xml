@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<trofies>
+  <guardian>
+    <name>Starlord</name>
+  <actor>Кріс Пратт</actor>
+  </guardian>
+<guardian>
+    <name>Gamora</name>
+  <actor>Зої Салдана</actor>
+  </guardian>
+<guardian>
+    <name>Drax</name>
+  <actor>Дейв Батіста</actor>
+  </guardian>
+<guardian>
+    <name>Groot</name>
+  <actor>Він Дізель (голос)</actor>
+  </guardian>
+<guardian>
+    <name>Rocket</name>
+  <actor>Бредлі Купер (голос)</actor>
+  </guardian>
+<guardian>
+    <name>Nebula</name>
+  <actor>Карен Гіллан</actor>
+  </guardian>
+
+</trofies>
