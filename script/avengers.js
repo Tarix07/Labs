@@ -86,6 +86,7 @@ window.onload = function() {
             document.getElementById('galaxy').innerHTML = table;//выводим таблицу
         }
     };
+};
 
 
     var images = document.getElementById('images');
