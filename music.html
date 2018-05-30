@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="utf-8">
+        <title>Avengers: Infinity War / Music</title>
+        <link href="style/style.css" rel="stylesheet" type="text/css">
+        <!--[if lt IE 9]>
+            <script src="script/html5shiv.js"></script>
+            <![endif]-->
+        <link href="style/musicStyle.css" rel="stylesheet" type="text/css">
+        <script src="script/musicScript.js"></script>
+            <script src="script/musicLoad.js"></script>
+    </head>
+    <body>
+    <div class="context">
+        <header>
+            Саундтреки із фільму
+        </header>
+            <nav>
+                <a class="menu" href="index.html">Головна</a> |
+                <a class="menu" href="avangers.html">Захисники Всессвіту</a> |                
+                <a class="menu" href="form.html">Визначимо, яким каменем ви володієте</a> |
+                <a class="menu" href="art.html">Месник-митець</a>
+            </nav>
+            <main id="music_main">
+               <section>
+                   <h1>Насолоджуйтесь музикою</h1>
+               <div class="row">
+                <div id="player">
+                  <canvas id="track"></canvas><br>
+                  <audio id="mus" controls>
+                    <source src="music/The%20Avengers.mp3">
+                </audio>
+                   </div>
+                <ol class="music_list">
+                    <li>The Avengers</li>
+                    <li>Wake Him Up</li>
+                    <li>The End Game</li>
+                    <li>One Way Ticket</li>
+                    <li>Infinity War</li>
+                    <li>Family Affairs</li>
+                </ol>
+                 </div>
+                 <h4>Тут ви можете завантажити свою музику</h4><br>
+            <div class="row">
+                <audio id="upl" controls="controls">
+                    <p class="error">Співчуваю,але ваш браузер не підтримує музичні файли.</p>
+                </audio>
+                <br>
+                <input type="file" id="audioInput"/>
+            </div><br>
+               </section>
+            </main>
+            <footer>  
+            <nav>
+                <a class="menu" href="index.html">Головна</a><br>
+                <a class="menu" href="avangers.html">Захисники Всессвіту</a><br>                
+                <a class="menu" href="form.html">Визначимо, яким каменем ви володієте</a><br>
+                <a class="menu" href="art.html">Месник-митець</a>
+            </nav>
+            </footer>
+            </div>
+    </body>
+</html>

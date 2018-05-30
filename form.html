@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="uk">
+    <head>
+        <meta charset="utf-8">
+        <title>Avengers: Infinity War / Form</title>
+        <link href="style/style.css" rel="stylesheet" type="text/css">
+        <link href="style/formStyle.css" rel="stylesheet" type="text/css">
+        <!--[if lt IE 9]>
+            <script src="script/html5shiv.js"></script>
+        <![endif]-->
+        <script src="script/FormScript.js"></script>
+        <script src="script/nwxforms.js"></script>
+
+    </head>
+    <body>
+    <div class="context">
+        <header>
+            Визначимо, яким каменем ви володієте
+        </header>
+        <nav>
+                <a class="menu" href="index.html">Головна</a> |
+                <a class="menu" href="avangers.html">Захисники Всессвіту</a> |                
+                <a class="menu" href="music.html">Саундтреки із фільму</a> |
+                <a class="menu" href="art.html">Месник-митець</a>
+            </nav>
+            <main>
+               <section>
+                   <h1>Заповніть всі поля для оформлення</h1>
+                   <div>           
+        <form name="order" action="vitau.html">
+           
+            <div><label for="name">Ім'я</label></div>
+            <div><input class="required" name="name" id="name" type="text" placeholder="Ваше ім'я" autofocus="" required="" title="Введіть слово, надруковане у Вашому паспорті біля надпису   Ім'я"></div>
+
+            <div><label for="name">Прізвище</label></div>
+            <div><input name="surname" id="surname" type="text" placeholder="Ваше прізвище" required="" title="Введіть слово, надруковане у Вашому паспорті біля надпису    Прізвище"></div>
+
+            <div><label for="email">E-mail</label></div>
+            <div><input name="email" id="email" type="email" placeholder="example@gmail.com" required="" title="Введ свію електронну адресу" pattern="^[-a-z0-9!#$%&'*+/=?^_`{|}~]+(?:\.[-a-z0-9!#$%&'*+/=?^_`{|}~]+)*@(?:[a-z0-9]([-a-z0-9]{0,61}[a-z0-9])?\.)*(?:aero|arpa|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|[a-z][a-z])$"></div>
+
+            <div><label for="gender">Стать</label></div>
+            <div><select name="gender" id="gender" title="Виберіть свою стать"><option value="male">Чоловік</option><option value="female">Жінка</option></select></div>
+
+            <div><label for="age">Вік</label></div>
+            <div><input name="age" id="age" type="number" placeholder="Ваш вік" data-regexp="[0-9]" required="" title="Введіть справжнє число, яке відповідає кількості років від вашого народження "></div>
+
+                        <fieldset>
+                            <legend>Виберіть Камінь Нескінченності, яким ви хотіли б володіти</legend>
+                            <input type="checkbox" id="part1">Камінь Простору: можливість бути завжди там, де треба<br>
+                            <input type="checkbox" id="part2">Камінь Часу: можливість змінювати події в часі<br>
+                            <input type="checkbox" id="part3">Камінь Реальності: можливість змінювати все навколо себе<br>
+                            <input type="checkbox" id="part4">Камінь Сили: можливість мати надлюдську силу<br>
+                            <input type="checkbox" id="part5">Камінь Розуму: можливість усе знати<br>
+                            <input type="checkbox" id="part6">Камінь Душі: секретна можливість
+                        </fieldset>
+
+            <p><button class="submit" type="submit" title="Submit the form">Відправити</button></p>
+
+                
+        </form>
+       </section>
+            </main>
+            
+            <footer>
+             <nav>
+                <a class="menu" href="index.html">Головна</a><br>
+                <a class="menu" href="avangers.html">Захисники Всессвіту</a><br>               
+                <a class="menu" href="music.html">Саундтреки із фільму</a><br>
+                <a class="menu" href="art.html">Месник-митець</a>
+            </nav>
+
+            </footer>
+            </div>
+    </body>
+</html>
