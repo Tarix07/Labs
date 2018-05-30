@@ -51,7 +51,7 @@ window.onload = function() {
             }
             table += '</tr>';
             for (name in JSONDoc['Месник']) {
-                table += '<tr><td>' + JSONDoc['Месник'][name] + '</td><td>' + JSONDoc['Актор'][name] + '</td><tr>'+JSONDoc['Опис'][name] + '</td><td>';//создаём таблицу для полученных данных
+                table += '<tr><td>' + JSONDoc['Месник'][name] + '</td><td>' + JSONDoc['Актор'][name] + '</td><td>'+JSONDoc['Опис'][name] + '</td></tr>';//создаём таблицу для полученных данных
                 i++;
             }
             document.getElementById('avangers').style.visibility = 'hidden';
