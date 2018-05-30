@@ -44,8 +44,8 @@ window.onload = function() {
             alert(xhttp1.status + ': ' + xhttp1.statusText);
         } else {
                 var data = JSON.parse(xhttp1.responseText);
-                var actors = document.getElementById('actors');
-                var row = actors.insertRow(0);
+                var artists = document.getElementById('artists');
+                var row = artists.insertRow(0);
                 var cell = row.insertCell(0);
                 cell.innerHTML = "Месник";
                 cell = row.insertCell(1);
@@ -53,7 +53,7 @@ window.onload = function() {
                 cell = row.insertCell(2);
                 cell.innerHTML = "Опис";
                 for (var i = 0; i < 6; i++) {
-                    row = actors.insertRow(i + 1);
+                    row = artists.insertRow(i + 1);
                     cell = row.insertCell(0);
                     cell.innerHTML = data[i].name;
                     cell = row.insertCell(1);
@@ -61,7 +61,7 @@ window.onload = function() {
                     cell = row.insertCell(2);
                     cell.innerHTML = data[i].discr;
 
-                
+                }
                  ava.disabled=true;
         }
     };
@@ -86,7 +86,7 @@ window.onload = function() {
                 cell.innerHTML = x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue;
                 cell = row.insertCell(1);
                 cell.innerHTML = x[i].getElementsByTagName("actor")[0].childNodes[0].nodeValue;
-            
+            }
 gua.disabled=true;
         }
     };
