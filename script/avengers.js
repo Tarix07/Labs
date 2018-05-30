@@ -50,8 +50,8 @@ window.onload = function() {
                 table += '<th>' + name + '</th>';
             }
             table += '</tr>';
-            for (name in JSONDoc['Вид']) {
-                table += '<tr><td>' + JSONDoc['Вид'][name] + '</td><td>' + JSONDoc['Цена'][name] + '</td><tr>';//создаём таблицу для полученных данных
+            for (name in JSONDoc['Месник']) {
+                table += '<tr><td>' + JSONDoc['Месник'][name] + '</td><td>' + JSONDoc['Актор'][name] + '</td><tr>'+JSONDoc['Опис'][name] + '</td><td>';//создаём таблицу для полученных данных
                 i++;
             }
             document.getElementById('avangers').style.visibility = 'hidden';
