@@ -1,1 +1,269 @@
+body {overflow-x: hidden;}
 
+#error {
+    font-size: 30pt;
+    color: red;
+    font-style: italic;
+    padding: 15px;
+    height: 175px;
+    background-color: white;
+}
+
+section {
+	border-radius: 5px;
+	margin-left: 5px;
+	border-left-width: 4px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-left-color: #FF8000;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	padding-left: 5px;
+	background-color: #E8E8E8;
+}
+
+.small_pictures { padding: 5px; display: block; float: left; margin: 0; }
+
+.small_pictures li {
+	list-style-type: none; 
+	display: block; 
+	width: 100px;
+	height: 60px;
+	border: solid 1px white; 
+	margin: 2px;
+}
+	
+.small_pictures img {
+	width: 100px; 
+	height: 60px; 
+}
+
+.pictures p {display: block; font-style: italic; clear: both;}
+
+#bottom {
+	display: block; 
+	float: left; 
+	height: 188px; 
+	margin-left: auto; 
+	margin-top: 0px;
+	border: solid 1px darkorange;
+
+}
+
+.context { 
+	margin: 5px; 
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 400px; 
+	background-image: url('../images/redchunk.png');
+	border-radius: 10px;
+    min-height: 100%;
+}
+
+
+.style {
+    background: white 100%;
+    height: 250px;
+    border-radius: 0;
+    clear: both;
+    margin-bottom: 0;
+}
+
+#red, #green, #blue, #yellow, #darkviolet, #orange {
+    margin-right: 5px;
+    position: relative;
+    top: 10px;
+    width: 70px;
+    height: 70px;
+}
+#hand{
+	width: 100px;
+	height: 200px;
+	margin-left: 50px;
+	position: relative;
+}
+
+
+.drop_zone {
+    border-radius: 10px;
+    border-style: dashed;
+    border-width: 3px;
+    border-color: gainsboro;
+    float: right;
+    height: 175px;
+    width: 175px;
+    margin: 25px;
+    background-image: url('../images/hand/HandRed.png');
+}
+
+.background {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: black;
+    font-size: 20pt;
+    margin-bottom: 0;
+    clear: both;
+}
+
+
+nav a {text-decoration:none; font-weight:bold; color: #b3b3ff; font-size: 15pt;}
+.canvas {margin-left: 10px; width: 140%;}
+nav a:hover {color: white;}
+header {
+	color:solid black;
+    font-size:50pt;
+    font-family: sans-serif;
+    margin: 0px;
+    text-align: center;
+}
+
+main {
+	width: 99%;
+	margin: 0px;
+	display: block;
+	float: left;
+}
+
+.submit {
+    margin: 15px 0px;
+    width: 120px;
+    height: 25px;
+}
+
+aside {
+	display: block;
+	float: left;
+	width: 10%;
+	border: 5px solid #E9AA85;
+	border-radius: 10px;
+	background-color: white;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding: 0px;
+	margin-right: auto;
+	position: fixed;
+	right: 10px;
+
+}
+
+nav {
+	padding-left: 10px;
+	display: block;
+	width: 100%;
+}
+
+aside a {
+	text-decoration:none;
+	color: black;
+}
+
+aside a:hover {
+	color: grey;
+	text-decoration:underline;
+}
+aside p {
+	margin-top: 10px;
+	margin-right: 4px;
+	margin-bottom: 10px;
+	margin-left: 4px;
+}
+footer {
+	clear: both;
+	border-top-width: 3px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-top-color: #000;
+	margin: 0px;
+	padding: 0px;
+    width:100%;
+}
+footer div {
+	clear: none;
+	width: 100%;
+	float: left;
+    background-color: white;
+}
+
+body {
+	margin: 0px;
+	
+	background: url("../images/main.jpg")
+}
+
+#bottom_info {
+	background: #bbbbbb 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+
+@media screen and (max-width:815px)
+{
+	header, main, footer, aside, footer div { 
+	display: block;
+	clear: both;
+	width: 99%;
+	margin: 0; 
+	}
+    footer, footer div{
+        width: 100%;
+    }
+	.context {width: 100%;}
+	.canvas {margin: 0px 0px 0px 5px; width: 140%;}
+	aside { margin: 5px 0 5px 5px; border-width: 0px 0px 0px 4px; width: 90%;}
+	footer div p { margin: 10px 3px;}
+}
+
+
+@media screen and (max-width:500px)
+{
+    .pictures p {clear: none;}
+    .pictures {height: 100%;}
+	nav {width: 385px;}
+	.context {width: 100%;}
+	#head {display: none;}
+}
+
+@media screen and (max-device-width:815px)
+{
+	header, main, footer, aside, footer div { 
+	display: block;
+	clear: both;
+	width: 99%;
+	margin: 0; 
+	}
+    footer, footer div{
+        width: 100%;
+    }
+	.context {width: 100%;}
+	.canvas {margin: 0px 0px 0px 5px; width:140%;}
+	aside { margin: 5px 0 5px 5px; border-width: 0px 0px 0px 4px; width: 90%;}
+	footer div p { margin: 10px 3px;}
+    header {font-size: 18px;}
+}
+
+
+@media screen and (max-device-width:500px)
+{
+    
+    .pictures p {clear: none;}
+    .pictures {height: 220px;}
+	nav {width: 385px;}
+	.context {width: 100%;}
+	#head {display: none;}
+}
+
+
+@media screen and (max-width:1100px)
+{
+    aside{
+    	visibility: hidden;
+    }
+}

@@ -1,0 +1,25 @@
+@charset "utf-8";
+.table {
+	display: table;
+	border: 2px;
+}
+.row {
+	display: table-row;
+    flex-flow: row wrap;
+}
+.cell {
+	display: table-cell;
+    padding: 5px 15px;
+}
+.submit {
+    padding: 5px 15px;
+}
+h1 {
+    padding: 5px 15px;
+    text-align: center;
+}
+.contetx { width: 350px;}
+
+form{
+	text-align: center;
+}

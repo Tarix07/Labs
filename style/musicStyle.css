@@ -1,0 +1,25 @@
+body {overflow-x: hidden;}
+
+li:hover { cursor: pointer; background-color: aquamarine;}
+
+h5,h1,h4 { 
+    text-align: center; 
+    margin: 0;
+}
+
+#track { font-style: italic; color: gray; width: }
+
+.music_list {padding-bottom: 50px;
+list-style-type: none;}
+
+#music_main {
+    min-width: 550px;
+    width: 100%;
+}
+
+
+.music {min-width: 550px;}
+
+.row, #upl{
+	text-align: center;
+}

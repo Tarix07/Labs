@@ -1,0 +1,44 @@
+h2 {
+    font-size: 35px;
+    text-align: center;
+    margin: 35px 0
+}
+p {display: block;}
+.info {
+    padding: 1px; 
+    font-style: italic; 
+    border-style: solid; 
+    border-width: 0px 0px 3px 0px; 
+    border-color: blueviolet;
+    clear: both;
+    font-size: 30px;
+}
+.sauron_says { 
+    float: left; height: auto; 
+    border-style: dotted; 
+    border-color: lightgrey; 
+    margin: 10px 0px; 
+    border-width: 1px; 
+    font-style: italic; 
+    width: 348px;
+}
+.container {height: 420px;}
+
+#images, #send {margin-bottom: 5px;}
+
+#artists, #galaxy {border-width: 3px; border-style: solid; border-color: orangered; margin: 10px 0px; border-collapse: collapse;}
+#artists td, #artists tr {border: 3px solid orangered;}
+#galaxy td, #galaxy tr {border: 3px solid green;}
+
+ol{
+    list-style-type: none;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.butt{
+    text-align: center;
+}
+video{
+    width: 75%;
+    margin-left: 100px;
+}

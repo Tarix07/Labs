@@ -1,0 +1,35 @@
+.message {font-style: italic; 
+text-align: center; margin-top: 100px }
+
+.question {font-style: italic; 
+text-align: center;}
+
+.sug {font-style: italic; 
+text-align: center; margin-top: 150px
+}
+
+#canva { border: solid 3px #bbbbbb; margin-top: 10px;
+max-width: 400px; background: white; float: left; margin-right: 20px;}
+
+
+#subm, #canva {clear: both;}
+#subm {margin: 25px;}
+
+img{
+	float: left;
+}
+
+.forButtons {
+    list-style-type: none;
+    margin-top: 50px;
+}
+
+.but{
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.row{
+	padding: 10px;
+	min-height: 260px;
+	margin-bottom: 20px;
+}
