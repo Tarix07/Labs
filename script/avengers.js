@@ -65,8 +65,8 @@ window.onload = function() {
                  ava.disabled=true;
         }
     };
-    var xhttp2 = createreq();
-    var request2 = crXMLHttpRequest();
+   
+    var request2 = createreq();
     gua.onclick = function () {
         //запрос для xml файла
         request2.open('GET', 'forajax/guardians.xml', false);
