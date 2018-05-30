@@ -61,7 +61,7 @@ window.onload = function() {
                     cell = row.insertCell(2);
                     cell.innerHTML = data[i].discr;
 
-                }
+                
                  ava.disabled=true;
         }
     };
@@ -86,7 +86,7 @@ window.onload = function() {
                 cell.innerHTML = x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue;
                 cell = row.insertCell(1);
                 cell.innerHTML = x[i].getElementsByTagName("actor")[0].childNodes[0].nodeValue;
-            }
+            
 gua.disabled=true;
         }
     };
