@@ -66,28 +66,24 @@ window.onload = function() {
         }
     };
     var xhttp2 = createreq();
+    var request2 = crXMLHttpRequest();
     gua.onclick = function () {
-        xhttp2.open('GET', "forajax/guardians.xml", false);
-        xhttp2.send();
-
-        if (xhttp2.status != 200) {
-            alert(xhttp2.status + ': ' + xhttp2.statusText);
+        //запрос для xml файла
+        request2.open('GET', 'forajax/guardians.xml', false);
+        request2.send();
+        if (request2.status != 200) {//выводим ошибки
+            alert(request2.status + ': ' + request2.statusText);
         } else {
-            var xmlDoc = xhttp2.responseXML;
-            var x = xmlDoc.getElementsByTagName("guardian");
-            var row = document.getElementById("galaxy").insertRow(0);
-            var cell = row.insertCell(0);
-            cell.innerHTML = "Страж";
-            cell = row.insertCell(1);
-            cell.innerHTML = "Актор";
-            for (i = 0; i < 6; i++) {
-                row = document.getElementById("galaxy").insertRow(i + 1);
-                cell = row.insertCell(0);
-                cell.innerHTML = x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue;
-                cell = row.insertCell(1);
-                cell.innerHTML = x[i].getElementsByTagName("actor")[0].childNodes[0].nodeValue;
+            var i,
+                //создаём тамблицу для полученных данных
+                xmlDoc = request2.responseXML,
+                table = '<tr><th>Страж</th><th>Актор</th></th>',
+                x = xmlDoc.getElementsByTagName('guardian');
+            for (i = 0; i < x.length; i++) {
+                table += '<tr><td>' + x[i].getElementsByTagName('name')[0].childNodes[0].nodeValue + '</td><td>' + x[i].getElementsByTagName('actor')[0].childNodes[0].nodeValue;
             }
-gua.disabled=true;
+            document.getElementById('guardians').style.visibility = 'hidden';
+            document.getElementById('galaxy').innerHTML = table;//выводим таблицу
         }
     };
 
