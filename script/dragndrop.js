@@ -85,7 +85,7 @@ var winload = function () {//елементи для перетягування
             if (e.pageX > drop_zone.offsetLeft && e.pageX < drop_zone.offsetLeft + drop_zone.offsetWidth && e.pageY > drop_zone.offsetTop && e.pageY < drop_zone.offsetHeight + drop_zone.offsetTop) {
                 if (drag_el === red) {
                     
-                    drop_zone.style.backgroundImage = 'url(images/hand/HandRed.png)';
+                    drop_zone.style.backgroundImage = 'url(images/hand/Handred.png)';
                     
                     info.innerHTML = '<h2>Камінь Реальності</h2>\
                             <p>Камінь дозволяє своєму власникові здійснювати будь-які бажання, навіть якщо ці бажання суперечать науковим законам.\
