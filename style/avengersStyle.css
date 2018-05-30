@@ -26,8 +26,8 @@ p {display: block;}
 
 #images, #send {margin-bottom: 5px;}
 
-#artists, #galaxy {border-width: 3px; border-style: solid; border-color: orangered; margin: 10px 0px; border-collapse: collapse;}
-#artists td, #artists tr {border: 3px solid orangered;}
+#actors, #galaxy {border-width: 3px; border-style: solid; border-color: orangered; margin: 10px 0px; border-collapse: collapse;}
+#actors td, #actors tr {border: 3px solid orangered;}
 #galaxy td, #galaxy tr {border: 3px solid green;}
 
 ol{
