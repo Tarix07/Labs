@@ -35,41 +35,41 @@ window.onload = function() {
                      document.getElementById('slogan').style.visibility = 'hidden';
         }
     };
-    var  request3 = createreq();
+   var  request2 = createreq();
     ava.onclick = function () {
         //запрос для json файла
-        request3.open('GET', 'forajax/avengers.json', false);
-        request3.send();
-        if (request3.status != 200) {//выводим ошибки
-            alert(request3.status + ': ' + request3.statusText);
+        request2.open('GET', 'forajax/avengers.json', false);
+        request2.send();
+        if (request2.status != 200) {//выводим ошибки
+            alert(request2.status + ': ' + request2.statusText);
         } else {
             var i = 0,
-                JSONDoc = JSON.parse(request3.responseText),
+                JSONDoc = JSON.parse(request2.responseText),
                 table = '<tr>';
             for (name in JSONDoc) {
                 table += '<th>' + name + '</th>';
             }
             table += '</tr>';
-            for (name in JSONDoc['name']) {
-                table += '<tr><td>' + JSONDoc['Месник'][name] + '</td><td>' + JSONDoc['Актор'][name] + '</td><tr>' + '</td><td>' + JSONDoc['Опис'][name] + '</td><tr>';//создаём таблицу для полученных данных
+            for (name in JSONDoc['Вид']) {
+                table += '<tr><td>' + JSONDoc['Вид'][name] + '</td><td>' + JSONDoc['Цена'][name] + '</td><tr>';//создаём таблицу для полученных данных
                 i++;
             }
-            bestiiTable.style.visibility = 'hidden';
-            document.getElementById('avangers').innerHTML = table;//выводим результат
+            document.getElementById('avangers').style.visibility = 'hidden';
+            document.getElementById('artists').innerHTML = table;//выводим результат
         }
     };
     
-    var request2 = createreq();
+    var request3 = createreq();
     gua.onclick = function () {
         //запрос для xml файла
-        request2.open('GET', 'forajax/guardians.xml', false);
-        request2.send();
-        if (request2.status != 200) {//выводим ошибки
-            alert(request2.status + ': ' + request2.statusText);
+        request3.open('GET', 'forajax/guardians.xml', false);
+        request3.send();
+        if (request3.status != 200) {//выводим ошибки
+            alert(request3.status + ': ' + request3.statusText);
         } else {
             var i,
                 //создаём тамблицу для полученных данных
-                xmlDoc = request2.responseXML,
+                xmlDoc = request3.responseXML,
                 table = '<tr><th>Страж</th><th>Актор</th></th>',
                 x = xmlDoc.getElementsByTagName('guardian');
             for (i = 0; i < x.length; i++) {
