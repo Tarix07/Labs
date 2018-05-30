@@ -32,40 +32,33 @@ window.onload = function() {
         } else {
             var slogans = document.getElementById('ggg');
             slogans.innerHTML = xhttp.responseText.replace(/\n/g, '<br />');
-            slo.disabled=true;
+                     document.getElementById('slogan').style.visibility = 'hidden';
         }
     };
-    var xhttp1 = createreq();
+    var  request3 = createreq();
     ava.onclick = function () {
-        var y = false;
-        xhttp1.open('GET', "forajax/avengers.json", false);
-        xhttp1.send();
-        if (xhttp1.status != 200) {
-            alert(xhttp1.status + ': ' + xhttp1.statusText);
+        //запрос для json файла
+        request3.open('GET', 'forajax/avengers.json', false);
+        request3.send();
+        if (request3.status != 200) {//выводим ошибки
+            alert(request3.status + ': ' + request3.statusText);
         } else {
-                var data = JSON.parse(xhttp1.responseText);
-                var artists = document.getElementById('artists');
-                var row = artists.insertRow(0);
-                var cell = row.insertCell(0);
-                cell.innerHTML = "Месник";
-                cell = row.insertCell(1);
-                cell.innerHTML = "Актор";
-                cell = row.insertCell(2);
-                cell.innerHTML = "Опис";
-                for (var i = 0; i < 6; i++) {
-                    row = artists.insertRow(i + 1);
-                    cell = row.insertCell(0);
-                    cell.innerHTML = data[i].name;
-                    cell = row.insertCell(1);
-                    cell.innerHTML = data[i].actor;
-                    cell = row.insertCell(2);
-                    cell.innerHTML = data[i].discr;
-
-                }
-                 ava.disabled=true;
+            var i = 0,
+                JSONDoc = JSON.parse(request3.responseText),
+                table = '<tr>';
+            for (name in JSONDoc) {
+                table += '<th>' + name + '</th>';
+            }
+            table += '</tr>';
+            for (name in JSONDoc['name']) {
+                table += '<tr><td>' + JSONDoc['Месник'][name] + '</td><td>' + JSONDoc['Актор'][name] + '</td><tr>' + '</td><td>' + JSONDoc['Опис'][name] + '</td><tr>';//создаём таблицу для полученных данных
+                i++;
+            }
+            bestiiTable.style.visibility = 'hidden';
+            document.getElementById('avangers').innerHTML = table;//выводим результат
         }
     };
-   
+    
     var request2 = createreq();
     gua.onclick = function () {
         //запрос для xml файла
