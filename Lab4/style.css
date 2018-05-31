@@ -1,26 +1,26 @@
 #cloud1 {
 position: absolute;
-left: 25%;
+left: 30%;
 }
 
 #cloud2 {
 position: absolute;
-right: 25%;
+right: 30%;
 }
 
 #paud {
 
 	position: absolute;
-	/*left: 20%;*/
+	left: 13%;
     top: 75%;
 }
 
-.row{
+.row,.row1{
     display:flex;	
 	width: 100%;
 }
 #rain{
-	left: 25%;
+	left: 23%;
 	margin-top: 100px;
     position: relative;  
 }
@@ -38,4 +38,16 @@ right: 25%;
 body{
 	background-color:  grey;
 }
+.reuse{
+	visibility: hidden;
+	margin-left: 50%;
+	margin-top: 100px;
 
+}
+button{
+	font-size: 20px;
+}
+
+.row1{
+	text-align: center;
+}

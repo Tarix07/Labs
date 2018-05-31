@@ -1,46 +1,59 @@
 'use strict'
      
-     var div = $("div");
-        div.animate({height: '300px', opacity: '0.4'}, "slow");
-        div.animate({width: '300px', opacity: '0.8'}, "slow");
-        div.animate({height: '100px', opacity: '0.4'}, "slow");
-        div.animate({width: '100px', opacity: '0.8'}, "slow");
-
+   
 var myVar = setInterval(myPuld, 1000);
-
-
 function myPuld() {
     $("#paud").animate({
-        width: '+=50px',
-        heith: '-=50px'})
+        width: '+=30px',
+        top: '-=5px'})
     };
 
+
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(alert, 2200);
+}
+
+function alert() {
+  $(".reuse").css("visibility", "visible")
+}
+
+var myVar2=setInterval (blink, 3000);
+ function blink() {
+  $("#rain").fadeIn(3000).fadeOut(3000)
+ };
 
 
 $(document).ready(function(){  
 
     myPuld();
+    blink();
 
+    $(".main").click(function(){
 
-
-    $("button").click(function(){
+       clearInterval(myVar2);
        clearInterval(myVar);
-      
+
+        $("#rain").css("display", "none")       
+       
         
 
         $("#cloud1").animate({
             left: '10px',
             opacity: '0.5',
+            width: '-=100px'
         });
 
         $("#cloud2").animate({
             right: '10px',
             opacity: '0.5',
+            width: '-=100px'
         });
 
 
          $("#paud").hide(1000);
-          $("#rain").hide();
+          $("#rain").hide(100);
            $(".row").hide();
 
 
@@ -51,9 +64,13 @@ $(document).ready(function(){
            
 
          $("body").css("background-color", "white")
+
          
+      myFunction();
 
     });
+
+     $(".reuse").click(function(){location.reload();});
 
 });
 

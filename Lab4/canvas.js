@@ -44,7 +44,8 @@ window.onload = function() {
  	var sun = document.getElementById("sun");
 	var ctx4 = sun.getContext("2d");
 	ctx4.beginPath();
-	ctx4.arc(50, 50, 50, 0, 2 * Math.PI);
+	ctx4.lineWidth = 5;
+	ctx4.arc(55, 55, 50, 0, 2 * Math.PI);
 	ctx4.closePath();
 	ctx4.stroke();
 	ctx4.fillStyle = '#ffcc00'
