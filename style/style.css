@@ -227,7 +227,7 @@ body {
     .pictures p {clear: none;}
     .pictures {height: 100%;}
 	nav {width: 385px;}
-	.context {width: 100%;}
+	.context {max-width: 100%;}
 	#head {display: none;}
 }
 
@@ -256,7 +256,7 @@ body {
     .pictures p {clear: none;}
     .pictures {height: 220px;}
 	nav {width: 385px;}
-	.context {width: 100%;}
+	.context {max-width: 100%;}
 	#head {display: none;}
 }
 
