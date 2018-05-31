@@ -32,7 +32,7 @@ window.onload = function() {
         } else {
             var slogans = document.getElementById('ggg');
             slogans.innerHTML = xhttp.responseText.replace(/\n/g, '<br />');
-                     document.getElementById('slogan').style.visibility = 'hidden';
+                     document.getElementById('slogan'). disabled=true;
         }
     };
    var  request2 = createreq();
@@ -54,7 +54,7 @@ window.onload = function() {
                 table += '<tr><td>' + JSONDoc['Месник'][name] + '</td><td>' + JSONDoc['Актор'][name] + '</td><td>'+JSONDoc['Опис'][name] + '</td></tr>';//создаём таблицу для полученных данных
                 i++;
             }
-            document.getElementById('avangers').style.visibility = 'hidden';
+            document.getElementById('avangers').disabled=true;
             document.getElementById('artists').innerHTML = table;//выводим результат
         }
     };
@@ -75,7 +75,7 @@ window.onload = function() {
             for (i = 0; i < x.length; i++) {
                 table += '<tr><td>' + x[i].getElementsByTagName('name')[0].childNodes[0].nodeValue + '</td><td>' + x[i].getElementsByTagName('actor')[0].childNodes[0].nodeValue;
             }
-            document.getElementById('guardians').style.visibility = 'hidden';
+            document.getElementById('guardians').disabled=true;
             document.getElementById('galaxy').innerHTML = table;//выводим таблицу
         }
     };
