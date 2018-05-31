@@ -7,7 +7,7 @@
         div.animate({width: '100px', opacity: '0.8'}, "slow");
 
 var myVar = setInterval(myPuld, 1000);
-var myVar2 = setInterval(myRain, 1000);
+
 
 function myPuld() {
     $("#paud").animate({
@@ -15,23 +15,17 @@ function myPuld() {
         heith: '-=50px'})
     };
 
-function myRain() {
-    var rain = $("#rain");
-        div.animate({height: '300px', opacity: '0.4'}, "slow");
-        div.animate({width: '300px', opacity: '0.8'}, "slow");
-        div.animate({height: '100px', opacity: '0.4'}, "slow");
-        div.animate({width: '100px', opacity: '0.8'}, "slow");
-    };
+
 
 $(document).ready(function(){  
 
     myPuld();
-    myRain();
+
 
 
     $("button").click(function(){
        clearInterval(myVar);
-       clearInterval(myVar2);
+      
         
 
         $("#cloud1").animate({
@@ -46,8 +40,8 @@ $(document).ready(function(){
 
 
          $("#paud").hide(1000);
-          $("#rain").hide(1000);
-           $(".row").hide(1000);
+          $("#rain").hide();
+           $(".row").hide();
 
 
          $("#sun").animate({
