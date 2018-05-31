@@ -215,7 +215,7 @@ body {
     footer, footer div{
         width: 100%;
     }
-	.context {width: 100%;}
+	.context {width: 99%;}
 	.canvas {margin: 0px 0px 0px 5px; min-width: 140%;}
 	aside { margin: 5px 0 5px 5px; border-width: 0px 0px 0px 4px; width: 90%;}
 	footer div p { margin: 10px 3px;}
@@ -228,7 +228,7 @@ body {
     .pictures p {clear: none;}
     .pictures {height: 100%;}
 	nav {min-width: 98%;}
-	.context {min-width: 100%;}
+	.context {min-width: 99%;}
 	#head {display: none;}
 	 header {font-size: 18px;}
 }
