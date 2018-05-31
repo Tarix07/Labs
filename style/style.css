@@ -115,7 +115,7 @@ nav a {text-decoration:none; font-weight:bold; color: #b3b3ff; font-size: 15pt;}
 .canvas {margin-left: 10px; width: 140%;}
 nav a:hover {color: white;}
 header {
-	color:solid black;
+	color: black;
     font-size:50pt;
     font-family: sans-serif;
     margin: 0px;
