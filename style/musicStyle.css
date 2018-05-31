@@ -13,12 +13,12 @@ h5,h1,h4 {
 list-style-type: none;}
 
 #music_main {
-    min-width: 550px;
-    width: 100%;
+    
+    min-width: 99%;
 }
 
 
-.music {min-width: 550px;}
+.music {min-width: 99%;}
 
 .row, #upl{
 	text-align: center;
