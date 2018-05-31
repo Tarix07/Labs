@@ -216,9 +216,10 @@ body {
         width: 100%;
     }
 	.context {width: 100%;}
-	.canvas {margin: 0px 0px 0px 5px; width: 140%;}
+	.canvas {margin: 0px 0px 0px 5px; min-width: 140%;}
 	aside { margin: 5px 0 5px 5px; border-width: 0px 0px 0px 4px; width: 90%;}
 	footer div p { margin: 10px 3px;}
+	 header {font-size: 35px;}
 }
 
 
@@ -227,39 +228,10 @@ body {
     .pictures p {clear: none;}
     .pictures {height: 100%;}
 	nav {width: 385px;}
-	.context {max-width: 100%;}
+	.context {min-width: 100%;}
 	#head {display: none;}
+	 header {font-size: 18px;}
 }
-
-@media screen and (max-device-width:815px)
-{
-	header, main, footer, aside, footer div { 
-	display: block;
-	clear: both;
-	width: 99%;
-	margin: 0; 
-	}
-    footer, footer div{
-        width: 100%;
-    }
-	.context {width: 100%;}
-	.canvas {margin: 0px 0px 0px 5px; width:140%;}
-	aside { margin: 5px 0 5px 5px; border-width: 0px 0px 0px 4px; width: 90%;}
-	footer div p { margin: 10px 3px;}
-    header {font-size: 18px;}
-}
-
-
-@media screen and (max-device-width:400px)
-{
-    
-    .pictures p {clear: none;}
-    .pictures {height: 220px;}
-	nav {width: 385px;}
-	.context {max-width: 100%;}
-	#head {display: none;}
-}
-
 
 @media screen and (max-width:1100px)
 {
