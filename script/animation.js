@@ -29,7 +29,7 @@ else{
 function winload() {
     "use strict";
     if (document.all) { //ІЕ10- не має підтримки drawImage
-        document.getElementById('for_canvas').innerHTML = '<p id="error">Ваш браузер не может отобразить анимацию. Приносим извинения за неудобства.</p>';
+        document.getElementById('for_canvas').innerHTML = '<p id="error">Ваш браузер не може відобразити анімацию. Співчуваю.</p>';
         return;
     }
     images = new Array(27); // масив картинок для анімації
