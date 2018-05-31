@@ -154,7 +154,7 @@ aside {
 nav {
 	padding-left: 10px;
 	display: block;
-	width: 100%;
+	width: 98%;
 }
 
 aside a {
@@ -227,7 +227,7 @@ body {
 {
     .pictures p {clear: none;}
     .pictures {height: 100%;}
-	nav {width: 385px;}
+	nav {min-width: 98%;}
 	.context {min-width: 100%;}
 	#head {display: none;}
 	 header {font-size: 18px;}
