@@ -8,8 +8,8 @@ text-align: center;}
 text-align: center; margin-top: 150px
 }
 
-#canva { border: solid 3px #bbbbbb; margin-top: 10px;
-max-width: 400px; background: white; float: left; margin-right: 20px;}
+#canva { border: solid 3px #bbbbbb; margin-top: 10px; max-width:97%;
+width: 400px; background: white; float: left; margin-right: 20px;}
 
 
 #subm, #canva {clear: both;}
