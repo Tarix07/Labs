@@ -1,1 +1,41 @@
+#cloud1 {
+position: absolute;
+left: 25%;
+}
+
+#cloud2 {
+position: absolute;
+right: 25%;
+}
+
+#paud {
+
+	position: absolute;
+	/*left: 20%;*/
+    top: 75%;
+}
+
+.row{
+    display:flex;	
+	width: 100%;
+}
+#rain{
+	left: 25%;
+	margin-top: 100px;
+    position: relative;  
+}
+
+#sun{
+	left: 48%;
+	margin-top: 20px;
+    position: relative;  
+}
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+body{
+	background-color:  grey;
+}
 
