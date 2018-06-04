@@ -91,6 +91,7 @@ button{
     margin: auto;
     position: static;
     visibility: hidden;
+    width:700px;
 }
 
 #text p {
