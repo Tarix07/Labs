@@ -15,33 +15,66 @@ right: 30%;
     top: 75%;
 }
 
-.row,.row1{
-    display:flex;	
+.row{
+	width: 20%;
+	flex-direction: column;
+}
+.row1{
 	width: 100%;
 }
-#rain{
+
+
+.row,.row1{
+    display:flex;	
+
+}
+#rain5,#rain6,#rain7{
 	left: 23%;
-	margin-top: 100px;
+	/*margin-top: 50px;*/
     position: relative;  
+    width: 50%;
 }
 
+.rainrow{
+	margin-top: 50px;
+flex-direction: column;
+}
+#rain6{
+	left: 21.5%;
+}
+
+#rain7{
+	left: 20%;
+}
 #sun{
 	left: 48%;
 	margin-top: 20px;
-    position: relative;  
+    position: relative;
+    /*max-height: 270px;  */
+    height: 120px;
 }
 .flex-container {
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
+	position: absolute;
+    min-height: 100%;
 }
 body{
 	background-color:  grey;
 }
+
+#thun{
+	position: absolute;
+    left: 45%;
+    top: 30%;
+    z-index: -1;
+    display: none;
+}
 .reuse{
 	visibility: hidden;
 	margin-left: 50%;
-	margin-top: 100px;
+	height: 30px;
 
 }
 button{
@@ -51,3 +84,4 @@ button{
 .row1{
 	text-align: center;
 }
+

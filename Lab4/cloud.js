@@ -1,75 +1,117 @@
 'use strict'
      
-   
 var myVar = setInterval(myPuld, 1000);
 function myPuld() {
     $("#paud").animate({
-        width: '+=30px',
-        top: '-=5px'})
+        width: '+=12px',
+        top: '-=1px'
+    })
     };
 
-
-var myVar;
-
 function myFunction() {
-    myVar = setTimeout(alert, 2200);
-}
+   var myVar = setTimeout(alert, 1200);
+};
 
 function alert() {
   $(".reuse").css("visibility", "visible")
-}
+};
 
-var myVar2=setInterval (blink, 3000);
+function myFunction3() {
+   var myVar = setTimeout(stop, 25000);
+};
+
+function stop() {
+    clearInterval(myVar);
+    $("#paud").animate({
+    });
+};
+
+
+var raining=setInterval (blink, 1000); 
  function blink() {
-  $("#rain").fadeIn(3000).fadeOut(3000)
+    Rain1();
+    startRain2();
+    startRain3();
  };
+
+ function Rain1() {
+  $("#rain5").fadeIn(1000).fadeOut(1000);
+ };
+
+  function Rain2() {
+  $("#rain6").fadeIn(1000).fadeOut(1000);
+ };
+
+ function Rain3() {
+  $("#rain7").fadeIn(1000).fadeOut(1000)
+ };
+
+
+ function startRain2(){
+	var myVar=setTimeout(Rain2,300);
+};
+
+function startRain3(){
+	var myVar=setTimeout(Rain3,600);
+};
+
+
 
 
 $(document).ready(function(){  
 
     myPuld();
-    blink();
+    blink(); 
+    myFunction3();
 
     $(".main").click(function(){
 
-       clearInterval(myVar2);
-       clearInterval(myVar);
+       clearInterval(raining);  
 
-        $("#rain").css("display", "none")       
+         $("#paud").hide(1000);
        
-        
+        $(".rainrow").hide();
+      
+      
+           $(".row").hide();
 
         $("#cloud1").animate({
             left: '10px',
-            opacity: '0.5',
-            width: '-=100px'
+            opacity: '0.3',
+           
         });
 
         $("#cloud2").animate({
             right: '10px',
-            opacity: '0.5',
-            width: '-=100px'
+            opacity: '0.3',
+            
         });
-
-
-         $("#paud").hide(1000);
-          $("#rain").hide(100);
-           $(".row").hide();
-
 
          $("#sun").animate({
          	width: '+=150px',
          	height: '+=150px'
          })
            
-
+         myFunction();
          $("body").css("background-color", "white")
-
+         $("#thun").Hide();
          
-      myFunction();
 
     });
 
+    $(".thunder").click(function(){
+    document.getElementById('grim').play();
+
+    $("#thun").fadeIn(100).fadeOut(100);
+
+    var div = $(".flex-container");
+    div.animate({width: '90%', opacity: '0.2'},500);
+    div.animate({width: '98%', opacity: '0.6'},500);
+    div.animate({width: '92%', opacity: '0.5'},500);
+    div.animate({width: '100%', opacity: '1'},500);
+    });
+       
+  
      $(".reuse").click(function(){location.reload();});
 
 });

@@ -51,30 +51,56 @@ window.onload = function() {
 	ctx4.fillStyle = '#ffcc00'
  	ctx4.fill();
 
- 	var rain = document.getElementById("rain");
-	var ctx5 = rain.getContext("2d");
-	ctx5.lineWidth=10;
+
+ 	var rain5 = document.getElementById("rain5");
+    var ctx5 = rain5.getContext("2d");
+	ctx5.lineWidth=5;
 	ctx5.strokeStyle="blue";
-	ctx5.beginPath();
-	ctx5.moveTo(60,20);
-	ctx5.lineTo(30,100);
-	ctx5.moveTo(110,20);
-	ctx5.lineTo(80,100);
-	ctx5.moveTo(160,20);
-	ctx5.lineTo(130,100);
-	ctx5.moveTo(210,20);
-	ctx5.lineTo(180,100);
-	ctx5.moveTo(260,20);
-	ctx5.lineTo(230,100);
-	ctx5.moveTo(310,20);
-	ctx5.lineTo(280,100);
-	ctx5.moveTo(360,20);
-	ctx5.lineTo(330,100);
-	ctx5.moveTo(410,20);
-	ctx5.lineTo(380,100);
-	ctx5.moveTo(460,20);
-	ctx5.lineTo(430,100);
-	ctx5.moveTo(510,20);
-	ctx5.lineTo(480,100);
+	ctx5.beginPath();  
+    for(var x=1;x<=10;x++){
+    ctx5.moveTo(x*50,20);
+	ctx5.lineTo((x*50)-20,50);
+    }  
 	ctx5.stroke();
+
+	var rain6 = document.getElementById("rain6");
+    var ctx6 = rain6.getContext("2d");
+	ctx6.lineWidth=5;
+	ctx6.strokeStyle="blue";
+	ctx6.beginPath();  
+    for(var x=1;x<=10;x++){
+    ctx6.moveTo(x*50,20);
+	ctx6.lineTo((x*50)-20,50);
+    }  
+	ctx6.stroke();
+
+	var rain7 = document.getElementById("rain7");
+    var ctx7 = rain7.getContext("2d");
+	ctx7.lineWidth=5;
+	ctx7.strokeStyle="blue";
+	ctx7.beginPath();  
+    for(var x=1;x<=10;x++){
+    ctx7.moveTo(x*50,20);
+	ctx7.lineTo((x*50)-20,50);
+    }  
+	ctx7.stroke();
+
+
+        var thunder = document.getElementById("thun");
+		var ctx9 = thunder.getContext("2d");
+		ctx9.beginPath(); 
+		ctx9.lineWidth = 5;
+		ctx9.moveTo(10,10);
+		ctx9.lineTo(10,70);
+		ctx9.lineTo(20,70);
+		ctx9.lineTo(20,120);
+		ctx9.lineTo(30,120);
+		ctx9.lineTo(25,150);
+		ctx9.lineTo(70,60);
+		ctx9.lineTo(55,60);
+		ctx9.lineTo(55,10);
+		ctx9.closePath(); 
+		ctx9.stroke();
+		ctx9.fillStyle = '#ffcc00';
+		ctx9.fill();
 }
