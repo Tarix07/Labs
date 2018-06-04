@@ -85,3 +85,32 @@ button{
 	text-align: center;
 }
 
+#text {
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    position: static;
+    visibility: hidden;
+}
+
+#text p {
+    font-size: 30px;
+}
+
+#elements {
+    height: 40px;
+    width: 100%;
+    overflow: hidden;
+    width: 85%;
+    padding-bottom: 30px;
+    float: right;
+}
+
+.elem {
+    height: 150px;
+    float: left;
+    padding-right: 15px;
+    cursor: pointer;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}

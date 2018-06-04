@@ -16,6 +16,14 @@ function alert() {
   $(".reuse").css("visibility", "visible")
 };
 
+function myFunction4() {
+   var myVar = setTimeout(text, 700);
+};
+
+function text() {
+  $("#text").css("visibility", "visible")
+};
+
 function myFunction3() {
    var myVar = setTimeout(stop, 25000);
 };
@@ -93,8 +101,10 @@ $(document).ready(function(){
          })
            
          myFunction();
-         $("body").css("background-color", "white")
+         myFunction4();
+         $("body").css("background-color", "white");
          $("#thun").Hide();
+         
          
 
     });
